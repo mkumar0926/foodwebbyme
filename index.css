@@ -1,37 +1,120 @@
-.custom {
+header .navbar-brand img {
+  width: 100px;
+  height: 80px;
+}
+
+header .navbar-nav a {
   font-family: "Lobster";
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   font-style: italic;
 }
-.banner {
+
+#banner {
   background-image: url("https://t3.ftcdn.net/jpg/02/97/67/70/360_F_297677001_zX7ZzRq8DObUV5IWTHAIhAae6DuiEQh4.jpg");
   background-size: cover;
   height: 100vh;
 }
-.head {
-  font-family: "Monoton";
-  font-size: 28px;
-  font-weight: bold;
-  font-style: Normal;
-  color: white;
+
+#banner > div {
+  top: 45%;
+  width: 100%;
 }
-.para {
+
+#banner h2,
+#banner p {
   font-family: "Monoton";
+  font-weight: bold;
+}
+
+#banner p {
   font-size: 22px;
-  font-weight: bold;
-  font-style: Normal;
-  color: white;
+  text-align: center;
+  padding: 0 10px;
 }
-.bton {
+
+#banner button {
   width: 170px;
   height: 50px;
-  border-width: 1px;
-  border-radius: 10px;
-  margin-right: 10px;
-  border-style: solid;
-  color: white;
 }
+
+#whyChooseUsSec,
+#exploreSection {
+  background-color: aliceblue;
+  font-family: "Roboto";
+}
+
+#whyChooseUsSec > div > h3 {
+  color: #183b56;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#whyChooseUsSec > div > p,
+#whyChooseUsSec .card-text {
+  color: #5a7184;
+  font-size: 16px;
+}
+#whyChooseUsSec > div > p {
+  font-weight: 900;
+}
+
+#whyChooseUsSec .card,
+#exploreSection .card {
+  border-color: #e5eaf4;
+  text-align: center;
+  align-items: center;
+  padding: 15px 0;
+  border-radius: 20px;
+}
+
+#whyChooseUsSec .card > img {
+  width: 200px;
+  height: 200px;
+}
+
+#whyChooseUsSec .card-title {
+  color: #183b56;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#exploreSection .card > img {
+  width: 220px;
+  height: 220px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #banner > div {
+    top: 35%;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  #banner > div {
+    top: 32%;
+  }
+
+  #banner p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  #banner > div {
+    top: 30%;
+  }
+
+  #banner p {
+    font-size: 18px;
+  }
+
+  #banner button {
+    width: 150px;
+    height: 50px;
+  }
+}
+
 .wcu {
   background-color: aliceblue;
 }
@@ -132,7 +215,9 @@
 .social-icons i {
   font-size: 25px;
   margin-left: 7px;
-  color:#d0b200;
+}
+.icon {
+  color: #d0b200;
 }
 .follow {
   color: #183b56;
